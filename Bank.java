@@ -1,6 +1,24 @@
 public class Bank {
-    public static void main(String[] args)
-    {
-        System.out.println("Hello World!");
+    private double balance;
+
+    public Bank(double initialBalance) {
+        this.balance = initialBalance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public boolean withdraw(double amount) {
+        if (balance >= amount) {
+            balance -= amount;
+            return true;
+        } else {
+            return false;
+        }
     }
 }
