@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Hotel {
-    private String name;
-    private List<Room> rooms;
-    private List<Person> guests;
-    private Bank bank;
+    private String name; //hotel Name
+    private List<Room> rooms; // Rooms lists
+    private List<Person> guests; // Guests List
+    private Bank bank; // Bank amount
 
     public Hotel(String name, Bank bank) {
         this.name = name;
