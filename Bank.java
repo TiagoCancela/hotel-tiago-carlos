@@ -1,19 +1,19 @@
 public class Bank {
-    private double balance;
+    private int balance;
 
-    public Bank(double initialBalance) {
+    public Bank(int initialBalance) {
         this.balance = initialBalance;
     }
 
-    public double getBalance() {
+    public int getBalance() {
         return balance;
     }
 
-    public void deposit(double amount) {
+    public void deposit(int amount) {
         balance += amount;
     }
 
-    public boolean withdraw(double amount) {
+    public boolean withdraw(int amount) {
         if (balance >= amount) {
             balance -= amount;
             return true;
