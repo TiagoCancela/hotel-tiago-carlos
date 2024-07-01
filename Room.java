@@ -1,10 +1,10 @@
 public class Room {
-    private int roomNumber;
-    private RoomType roomType;
-    private boolean isOccupied;
+    private int roomNumber; 
+    private RoomType roomType;  // calling out RoomType, this class depends on RoomType for the 
+    private boolean isOccupied; // Boolean for a true or false isOccupied
 
     public Room(int roomNumber, RoomType roomType) {
-        this.roomNumber = roomNumber;
+        this.roomNumber = roomNumber; // assigning this room a number, a type and its not occupied
         this.roomType = roomType;
         this.isOccupied = false;
     }
@@ -22,10 +22,10 @@ public class Room {
     }
 
     public void checkIn() {
-        isOccupied = true;
+        isOccupied = true; // when we check in, the isOccupied turns true
     }
 
     public void checkOut() {
-        isOccupied = false;
+        isOccupied = false; // 
     }
 }
