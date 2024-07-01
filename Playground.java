@@ -15,5 +15,15 @@ public class Playground {
             Room 103 = new Room(103, Suite);
             Room 104 = new Room(104, Suite);
 
+            List<Room> rooms = new ArrayList<>();
+            rooms.add(101);
+            rooms.add(102);
+            rooms.add(103);
+            rooms.add(104);
+
+            for (Room Room : rooms) {
+
+                System.out.println("Quarto" + room.getRoomNumber() +" " + room.getRoomType() +  "- Ocupado" + room.isOcuppied());
+
     }
 }
