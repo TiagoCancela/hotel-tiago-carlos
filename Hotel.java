@@ -5,11 +5,10 @@ public class Hotel {
     private String name; //hotel Name
     private List<Room> rooms; // Rooms lists
     private List<Person> guests; // Guests List
-    private Bank bank; // Bank amount
+
 
     public Hotel(String name, Bank bank) {
         this.name = name;
-        this.bank = bank;
         this.rooms = new ArrayList<>();
         this.guests = new ArrayList<>();
     }
