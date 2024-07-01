@@ -13,4 +13,11 @@ public class Hotel {
         this.guests = new ArrayList<>();
     }
 
+    Public
+
+    
+    }
+
+    
+
   
