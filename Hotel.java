@@ -7,7 +7,7 @@ public class Hotel {
     private List<Person> guests; // Guests List
 
 
-    public Hotel(String name, Bank bank) {
+    public Hotel(String name) {
         this.name = name;
         this.rooms = new ArrayList<>();
         this.guests = new ArrayList<>();
@@ -17,7 +17,7 @@ public class Hotel {
         rooms.add(room);
     }
 
-    public void checkInGuest(Person person, int roomNumber) {
+    public void checkInGuest(Person person, int roomNumber) {        // Adding from the person Class
         for (Room room : rooms) {
             if (room.getRoomNumber() == roomNumber && !room.isOccupied()) {
                 room.checkIn();
